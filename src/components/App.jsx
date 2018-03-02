@@ -8,7 +8,6 @@ import WorksListContainer from './WorksListContainer';
 import Admin from './Admin';
 import AdminLogin from './AdminLogin';
 import Error404 from './Error404';
-import InstagramLink from './InstagramLink';
 import { Switch, Route, withRouter } from 'react-router-dom';
 
 
@@ -25,7 +24,6 @@ function App(){
         <Route path='/admin' component={Admin} />
         <Route component={Error404} />
       </Switch>
-      <InstagramLink />
     </div>
   );
 }
