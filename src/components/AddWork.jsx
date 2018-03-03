@@ -1,6 +1,13 @@
 import React from 'react';
 
 function AddWork(){
+  let _title;
+  let _medium;
+  let _description;
+  let height;
+  let width;
+  let price;
+
   return (
     <div>
       <h5>Fill out form to add a new work</h5>
@@ -17,7 +24,7 @@ function AddWork(){
         <input
           id='medium'
           placeholder='Medium'
-          ref={(textarea) => {_medium = textarea;}}/>
+          ref={(input) => {_medium = input;}}/>
         <br />
         <br />
         <p>Description:</p>

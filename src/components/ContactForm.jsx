@@ -1,6 +1,10 @@
 import React from 'react';
 
 function ContactForm(){
+  let _name;
+  let _email;
+  let _inquiry;
+
   return (
     <div>
       <h4>Please fill out the form to contact the artist</h4>
@@ -16,7 +20,7 @@ function ContactForm(){
         <input
           id='email'
           placeholder='Email'
-          ref={(input) => {_email = textarea;}}/>
+          ref={(input) => {_email = input;}}/>
         <br />
         <p>Inquiry:</p>
         <textarea
