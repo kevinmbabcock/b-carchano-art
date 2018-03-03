@@ -37,6 +37,19 @@ const masterWorksList = {
   }
 }
 
+const masterInquiriesList = {
+  1: {
+    name: 'Kevin',
+    email: 'babsy10@gmail.com',
+    inquiry: 'this is Kevin\'s inquiry'
+  },
+  2: {
+    name: 'Brittany',
+    email: 'bcarchano@gmail.com',
+    inquiry: 'this is Brittany\'s inquiry'
+  }
+}
+
 const workType = {
   1: 'all',
   2: 'acrylic',
@@ -49,5 +62,6 @@ export const initialState = {
   workType: 1,
   selectedWorkId: 1,
   isAdmin: false,
-  purchaseInquiry: false
+  purchaseInquiry: false,
+  inquiriesList: masterInquiriesList
 }
