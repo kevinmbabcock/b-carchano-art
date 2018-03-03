@@ -1,6 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-function ContactForm(){
+function ContactForm(props){
   let _name;
   let _email;
   let _inquiry;
@@ -8,7 +9,7 @@ function ContactForm(){
   return (
     <div>
       <h4>Please fill out the form to contact the artist</h4>
-      <form>
+      <form onSubmit={props.onFormSubmission}>
         <p>Name:</p>
         <input
           type='text'
@@ -32,6 +33,10 @@ function ContactForm(){
       </form>
     </div>
   );
+}
+
+ContactForm.propTypes = {
+  onFormSubmission: PropTypes.func
 }
 
 export default ContactForm;
