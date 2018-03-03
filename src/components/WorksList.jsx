@@ -1,15 +1,18 @@
 import React from 'react';
 import Works from './Works';
-import EditCarousel from './EditCarousel';
 
-function WorksList(){
+import PropTypes from 'prop-types';
+
+function WorksList(props){
   return (
     <div>
-      <p>WorksList component has loaded</p>
-      <Works />
-      <EditCarousel />
+      <Works worksList={props.worksList}/>
     </div>
   );
+}
+
+WorksList.propTypes = {
+  worksList: PropTypes.object
 }
 
 export default WorksList;

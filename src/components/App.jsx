@@ -17,10 +17,10 @@ function App(){
       <NavBar />
       <Switch>
         <Route exact path='/' component={Carousel} />
+        <Route exact path='/admin' component={Admin} />
         <Route path='/contact' component={ContactControl} />
         <Route path='/about' component={About} />
         <Route path='/works' component={WorksListContainer} />
-        <Route path='/admin' component={Admin} />
         <Route component={Error404} />
       </Switch>
     </div>

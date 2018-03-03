@@ -1,11 +1,11 @@
 import React from 'react';
-import WorksListContainer from './WorksListContainer';
+import Works from './Works';
+import constants from './../constants';
 
 function Carousel(){
   return (
     <div>
-      <p>Carousel component has loaded</p>
-      <WorksListContainer />
+      
     </div>
   );
 }

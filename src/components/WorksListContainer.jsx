@@ -1,11 +1,11 @@
 import React from 'react';
 import WorksList from './WorksList';
+import constants from './../constants';
 
-function WorksListContainer(){
+function WorksListContainer() {
   return (
     <div>
-      <p>WorksListContainer component has loaded</p>
-      <WorksList />
+      <WorksList worksList={constants.initialState.worksList}/>
     </div>
   );
 }
