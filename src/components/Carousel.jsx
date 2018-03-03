@@ -1,5 +1,4 @@
 import React from 'react';
-import WorksList from './Works';
 import constants from './../constants';
 
 function Carousel(){
@@ -12,10 +11,10 @@ function Carousel(){
             <div>
               <p>{work.img}</p>
             </div>
-          )
+          );
         }
       }
-    )}
+      )}
     </div>
   );
 }

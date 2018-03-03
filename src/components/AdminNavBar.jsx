@@ -5,7 +5,13 @@ function AdminNavBar(){
   return (
     <div>
       <p>Admin Tools:</p>
-      <Link to='/admin/add-work'>Add Work</Link> | <Link to='/admin/edit-work'>Edit Work</Link> | <Link to='/admin/edit-bio'>Edit Bio</Link> | <Link to='/admin/inquiries'>View Inquiries</Link>
+      <Link to='/admin/add-work'>Add Work</Link>
+      <br /><br />
+      <Link to='/admin/edit-work'>Edit Work</Link>
+      <br /><br />
+      <Link to='/admin/edit-bio'>Edit Bio</Link>
+      <br /><br />
+      <Link to='/admin/inquiries'>View Inquiries</Link>
     </div>
   );
 }

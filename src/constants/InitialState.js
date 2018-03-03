@@ -41,12 +41,14 @@ const masterInquiriesList = {
   1: {
     name: 'Kevin',
     email: 'babsy10@gmail.com',
-    inquiry: 'this is Kevin\'s inquiry'
+    inquiry: 'this is Kevin\'s inquiry',
+    new: true
   },
   2: {
     name: 'Brittany',
     email: 'bcarchano@gmail.com',
-    inquiry: 'this is Brittany\'s inquiry'
+    inquiry: 'this is Brittany\'s inquiry',
+    new: false
   }
 };
 

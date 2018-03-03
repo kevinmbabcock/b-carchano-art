@@ -16,8 +16,8 @@ function InquiryDetails(props){
 
 InquiryDetails.propTypes = {
   name: PropTypes.string,
-  email: PropTypes.sring,
-  inquiry: PropTypes.inquiry
+  email: PropTypes.string,
+  inquiry: PropTypes.string
 };
 
 export default InquiryDetails;

@@ -13,7 +13,7 @@ function Inquiry(props){
               name={inquiry.name}
               email={inquiry.email}
               inquiry={inquiry.inquiry}
-              key={inquiry.id} />
+              key={inquiryId} />
             <br />
           </div>
         );}

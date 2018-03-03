@@ -20,7 +20,7 @@ function Works(props){
               width={work.width}
               price={work.price}
               forSale={work.forSale}
-              key={work.id} />
+              key={workId} />
             <div className='row'>
               <div className='col-sm-4'></div>
               <div className='col-sm-2'>
