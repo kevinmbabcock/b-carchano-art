@@ -12,6 +12,6 @@ function WorksList(props){
 
 WorksList.propTypes = {
   worksList: PropTypes.object
-}
+};
 
 export default WorksList;

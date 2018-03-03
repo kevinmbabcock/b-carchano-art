@@ -6,7 +6,7 @@ import About from './About';
 import Carousel from './Carousel';
 import WorksListContainer from './WorksListContainer';
 import Admin from './Admin';
-import AdminLogin from './AdminLogin';
+// import AdminLogin from './AdminLogin';
 import Error404 from './Error404';
 import { Switch, Route, withRouter } from 'react-router-dom';
 import AddWork from './AddWork';

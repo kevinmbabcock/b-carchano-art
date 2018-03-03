@@ -5,7 +5,7 @@ function WorkDetails(props){
 
   var localStyles = {
     textAlign: 'center'
-  }
+  };
 
   return (
     <div style={localStyles}>
@@ -22,10 +22,10 @@ function WorkDetails(props){
 WorkDetails.propTypes = {
   title: PropTypes.string,
   medium: PropTypes.string,
-  description: PropTypes.description,
+  description: PropTypes.string,
   height: PropTypes.number,
   width: PropTypes.number,
   price: PropTypes.number
-}
+};
 
 export default WorkDetails;

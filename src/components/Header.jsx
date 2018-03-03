@@ -5,13 +5,13 @@ function Header(){
     textAlign: 'center',
     fontFamily: 'cursive',
     color: '#8c8c8c'
-  }
+  };
 
   var headerStyle = {
     backgroundColor: '#ffffff',
     marginTop: '50px',
     marginBottom: '40px'
-  }
+  };
 
   return (
     <div style={headerStyle}>

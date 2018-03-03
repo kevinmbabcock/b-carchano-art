@@ -12,13 +12,18 @@ function Inquiry(props){
             <InquiryDetails
               name={inquiry.name}
               email={inquiry.email}
-              inquiry={inquiry.inquiry} />
+              inquiry={inquiry.inquiry}
+              key={inquiry.id} />
             <br />
           </div>
-        )}
+        );}
       )}
     </div>
   );
 }
+
+Inquiry.propTypes = {
+  inquiriesList: PropTypes.object
+};
 
 export default Inquiry;

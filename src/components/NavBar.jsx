@@ -7,7 +7,7 @@ function Navbar(){
     textAlign: 'center',
     color: '#8c8c8c',
     marginBottom: '30px'
-  }
+  };
 
   return (
     <div style={localStyle}>

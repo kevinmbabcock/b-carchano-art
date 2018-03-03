@@ -12,6 +12,6 @@ function InquiriesList(props){
 
 InquiriesList.propTypes = {
   inquiriesList: PropTypes.object
-}
+};
 
 export default InquiriesList;

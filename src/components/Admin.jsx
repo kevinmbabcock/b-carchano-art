@@ -4,7 +4,6 @@ import AddWork from './AddWork';
 import WorksListContainer from './WorksListContainer';
 import EditBio from './EditBio';
 import InquiriesListContainer from './InquiriesListContainer';
-import Error404 from './Error404';
 import { Switch, Route, withRouter } from 'react-router-dom';
 
 function Admin(){
@@ -21,4 +20,4 @@ function Admin(){
   );
 }
 
-export default Admin;
+export default withRouter(Admin);

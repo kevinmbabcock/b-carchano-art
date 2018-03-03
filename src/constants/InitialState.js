@@ -9,7 +9,7 @@ const masterWorksList = {
     forSale: true,
     featured: true,
     id: 1,
-    img: 'image placeholder'
+    img: 'image placeholde1'
   },
   2: {
     title: 'work number 2',
@@ -21,7 +21,7 @@ const masterWorksList = {
     forSale: true,
     featured: true,
     id: 2,
-    img: 'image placeholder'
+    img: 'image placeholder2'
   },
   3: {
     title: 'work number 3',
@@ -33,9 +33,9 @@ const masterWorksList = {
     forSale: false,
     featured: false,
     id: 3,
-    img: 'image placeholder'
+    img: 'image placeholder3'
   }
-}
+};
 
 const masterInquiriesList = {
   1: {
@@ -48,20 +48,20 @@ const masterInquiriesList = {
     email: 'bcarchano@gmail.com',
     inquiry: 'this is Brittany\'s inquiry'
   }
-}
+};
 
-const workType = {
-  1: 'all',
-  2: 'acrylic',
-  3: 'ink',
-  4: 'water-color'
-}
+// const workType = {
+//   1: 'all',
+//   2: 'acrylic',
+//   3: 'ink',
+//   4: 'water-color'
+// }
 
 export const initialState = {
   worksList: masterWorksList,
-  workType: 1,
-  selectedWorkId: 1,
-  isAdmin: false,
-  purchaseInquiry: false,
+  // workType: 1,
+  // selectedWorkId: 1,
+  // isAdmin: false,
+  // purchaseInquiry: false,
   inquiriesList: masterInquiriesList
-}
+};

@@ -8,8 +8,8 @@ function Works(props){
   return (
     <div>
       <p>{props.worksList.img}</p>
-      {Object.keys(props.worksList).map(function(worksId) {
-        var work  = props.worksList[worksId];
+      {Object.keys(props.worksList).map(function(workId) {
+        var work  = props.worksList[workId];
         return (
           <div>
             <WorkDetails
@@ -19,7 +19,8 @@ function Works(props){
               height={work.height}
               width={work.width}
               price={work.price}
-              forSale={work.forSale} />
+              forSale={work.forSale}
+              key={work.id} />
             <div className='row'>
               <div className='col-sm-4'></div>
               <div className='col-sm-2'>
@@ -33,7 +34,7 @@ function Works(props){
             <br />
             <br />
           </div>
-        )}
+        );}
       )}
     </div>
   );
@@ -41,6 +42,6 @@ function Works(props){
 
 Works.propTypes = {
   worksList: PropTypes.object
-}
+};
 
 export default Works;
