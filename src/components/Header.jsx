@@ -3,7 +3,7 @@ import React from 'react';
 function Header(){
   return (
     <div>
-      <p>Header component has loaded</p>
+      <h1>B.Carchano Art</h1>
     </div>
   );
 }

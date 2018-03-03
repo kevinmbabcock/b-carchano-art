@@ -4,9 +4,9 @@ function AddWork(){
   let _title;
   let _medium;
   let _description;
-  let height;
-  let width;
-  let price;
+  let _height;
+  let _width;
+  let _price;
 
   return (
     <div>

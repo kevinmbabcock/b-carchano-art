@@ -4,10 +4,10 @@ import ContactVerification from './ContactVerification';
 import InstagramLink from './InstagramLink';
 import ShippingCost from './ShippingCost';
 
-function Contact(){
+function ContactControl(){
   return (
     <div>
-      <p>Contact component has loaded</p>
+      <p>ContactControl component has loaded</p>
       <ContactForm />
       <ContactVerification />
       <InstagramLink />
@@ -16,4 +16,4 @@ function Contact(){
   );
 }
 
-export default Contact;
+export default ContactControl;

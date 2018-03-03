@@ -3,7 +3,7 @@ import React from 'react';
 function ContactVerification(){
   return (
     <div>
-      <p>ContactVerification component has loaded</p>
+      <p>Thank you for your submission! The artist will be in touch with you soon!</p>
     </div>
   );
 }
