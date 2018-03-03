@@ -1,11 +1,11 @@
 import React from 'react';
 import InquiriesList from './InquiriesList';
+import constants from './../constants';
 
 function InquiriesListContainer(){
   return (
     <div>
-      <p>InquiriesListContainer component has loaded</p>
-      <InquiriesList />
+      <InquiriesList inquiriesList={constants.initialState.inquiriesList}/>
     </div>
   );
 }

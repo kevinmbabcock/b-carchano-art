@@ -1,13 +1,17 @@
 import React from 'react';
 import Inquiry from './Inquiry';
+import PropTypes from 'prop-types';
 
-function InquiriesList(){
+function InquiriesList(props){
   return (
     <div>
-      <p>InquiriesList component has loaded</p>
-      <Inquiry />
+      <Inquiry inquiriesList={props.inquiriesList}/>
     </div>
   );
+}
+
+InquiriesList.propTypes = {
+  inquiriesList: PropTypes.object
 }
 
 export default InquiriesList;
