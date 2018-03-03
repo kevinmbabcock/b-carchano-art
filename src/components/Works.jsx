@@ -20,8 +20,18 @@ function Works(props){
               width={work.width}
               price={work.price}
               forSale={work.forSale} />
-            <PrevButton />
-            <NextButton />
+            <div className='row'>
+              <div className='col-sm-4'></div>
+              <div className='col-sm-2'>
+                <PrevButton />
+              </div>
+              <div className='col-sm-2'>
+                <NextButton />
+              </div>
+              <div className='col-sm-4'></div>
+            </div>
+            <br />
+            <br />
           </div>
         )}
       )}

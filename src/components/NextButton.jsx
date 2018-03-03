@@ -3,7 +3,7 @@ import React from 'react';
 function NextButton(){
   return (
     <div>
-      <p>NextButton component has loaded</p>
+      <button>next</button>
     </div>
   );
 }

@@ -3,7 +3,7 @@ import React from 'react';
 function PrevButton(){
   return (
     <div>
-      <p>PrevButton component has loaded</p>
+      <button>prev</button>
     </div>
   );
 }

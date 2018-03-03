@@ -1,10 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-
 function WorkDetails(props){
+
+  var localStyles = {
+    textAlign: 'center'
+  }
+
   return (
-    <div>
+    <div style={localStyles}>
       <h5>{props.title}</h5>
       <p>Medium: {props.medium}</p>
       <p>{props.description}</p>
