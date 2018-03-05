@@ -10,36 +10,28 @@ function Navbar(){
   };
 
   return (
-    <div style={navBarStyles}>
+    <div style={{marginBotton: '30px'}}>
       <div className='row'>
         <div className='col-sm-1'>
         </div>
-        <div className='col-sm-1'>
-          <Link to='/'>Home</Link>
+        <div className='col-sm-2'>
+          <Link style={navBarStyles} to='/'>Home</Link>
         </div>
-        <div className='col-sm-1'>
-          <p> | </p>
+
+        <div className='col-sm-2'>
+          <Link style={navBarStyles} to='/works'>Works</Link>
         </div>
-        <div className='col-sm-1'>
-          <Link to='/works'>Works</Link>
+
+        <div className='col-sm-2'>
+          <Link style={navBarStyles} to='/about'>About</Link>
         </div>
-        <div className='col-sm-1'>
-          <p> | </p>
+
+        <div className='col-sm-2'>
+          <Link style={navBarStyles} to='/contact'>Contact</Link>
         </div>
-        <div className='col-sm-1'>
-          <Link to='/about'>About</Link>
-        </div>
-        <div className='col-sm-1'>
-          <p> | </p>
-        </div>
-        <div className='col-sm-1'>
-          <Link to='/contact'>Contact</Link>
-        </div>
-        <div className='col-sm-1'>
-          <p> | </p>
-        </div>
-        <div className='col-sm-1'>
-          <Link to='/admin'>Admin</Link>
+
+        <div className='col-sm-2'>
+          <Link style={navBarStyles} to='/admin'>Admin</Link>
         </div>
         <div className='col-sm-1'>
 
@@ -47,6 +39,7 @@ function Navbar(){
         <div className='col-sm-1'>
         </div>
       </div>
+      <br /> <br />
     </div>
   );
 }

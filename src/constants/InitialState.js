@@ -1,6 +1,6 @@
-import photo1 from './../assets/images/photo1.png';
-import photo2 from './../assets/images/photo2.png';
-import photo3 from './../assets/images/photo3.png';
+import photo1 from './../assets/images/photo1.jpg';
+import photo2 from './../assets/images/photo2.jpg';
+import photo3 from './../assets/images/photo3.jpg';
 
 const masterWorksList = {
   1: {
