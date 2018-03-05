@@ -5,34 +5,20 @@ import PrevButton from './PrevButton';
 import NextButton from './NextButton';
 
 function Works(props){
+
+  var centerWorkImage = {
+    marginLeft: 'auto',
+    marginRight: 'auto'
+  };
+
   return (
     <div>
       <p>{props.worksList.img}</p>
       {Object.keys(props.worksList).map(function(workId) {
         var work  = props.worksList[workId];
         return (
-          <div>
-            <WorkDetails
-              title={work.title}
-              medium={work.medium}
-              description={work.description}
-              height={work.height}
-              width={work.width}
-              price={work.price}
-              forSale={work.forSale}
-              key={workId} />
-            <div className='row'>
-              <div className='col-sm-4'></div>
-              <div className='col-sm-2'>
-                <PrevButton />
-              </div>
-              <div className='col-sm-2'>
-                <NextButton />
-              </div>
-              <div className='col-sm-4'></div>
-            </div>
-            <br />
-            <br />
+          <div className='centerWorkImage'>
+              <img src={work.img} alt='photo'></img>
           </div>
         );}
       )}

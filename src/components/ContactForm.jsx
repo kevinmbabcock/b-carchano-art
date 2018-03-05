@@ -2,20 +2,28 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 function ContactForm(props){
-  let _name;
+  let _firstName;
+  let _lastName;
   let _email;
-  let _inquiry;
+  let _subject;
+  let _message;
 
   return (
     <div>
       <h4>Please fill out the form to contact the artist</h4>
       <form onSubmit={props.onFormSubmission}>
-        <p>Name:</p>
+        <p>First Name:</p>
         <input
           type='text'
-          id='name'
-          placeholder='Your Name'
-          ref={(input) => {_name = input;}}/>
+          id='fistName'
+          placeholder='First Name'
+          ref={(input) => {_firstName = input;}}/>
+        <p>Last Name:</p>
+        <input
+          type='text'
+          id='lastName'
+          placeholder='Last Name'
+          ref={(input) => {_lastName = input;}}/>
         <br />
         <p>Email:</p>
         <input
@@ -23,10 +31,15 @@ function ContactForm(props){
           placeholder='Email'
           ref={(input) => {_email = input;}}/>
         <br />
-        <p>Inquiry:</p>
+        <p>Subject</p>
+        <input
+          id='subject'
+          placeholder='Subject'
+          ref={(input) => {_subject = input;}}/>
+        <p>Message:</p>
         <textarea
-          id='inquiry'
-          ref={(textarea) => {_inquiry = textarea;}}/>
+          id='message'
+          ref={(textarea) => {_message = textarea;}}/>
         <br />
         <br />
         <button type='submit'>Submit Request</button>

@@ -7,6 +7,9 @@ function AddWork(){
   let _height;
   let _width;
   let _price;
+  let _forSale;
+  let _featured;
+  let _img;
 
   return (
     <div>

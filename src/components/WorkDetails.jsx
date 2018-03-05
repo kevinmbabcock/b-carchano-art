@@ -3,12 +3,12 @@ import PropTypes from 'prop-types';
 
 function WorkDetails(props){
 
-  var localStyles = {
+  var workDetailsStyles = {
     textAlign: 'center'
   };
 
   return (
-    <div style={localStyles}>
+    <div style={workDetailsStyles}>
       <h5>{props.title}</h5>
       <p>Medium: {props.medium}</p>
       <p>{props.description}</p>

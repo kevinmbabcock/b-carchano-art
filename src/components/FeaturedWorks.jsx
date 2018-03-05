@@ -1,7 +1,7 @@
 import React from 'react';
 import constants from './../constants';
 
-function Carousel(){
+function FeaturedWorks() {
   return (
     <div>
       {Object.keys(constants.initialState.worksList).map(function(workId) {
@@ -9,7 +9,7 @@ function Carousel(){
         if (work.featured) {
           return (
             <div>
-              <p>{work.img}</p>
+              <img src={work.img} alt='photo'></img>
             </div>
           );
         }
@@ -19,4 +19,4 @@ function Carousel(){
   );
 }
 
-export default Carousel;
+export default FeaturedWorks;

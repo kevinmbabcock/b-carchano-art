@@ -1,2 +1,17 @@
-1. Should developer or user be in charge of database?
-2. Are empty <div>'s for formatting bad practice?
+Notes:
+  * Needs(?)
+    1. Button to purchase work. Rendered with each work in list.
+  * Need to learn:
+    1. How to add images through a form
+    2. How to render WorkDeatils in modal
+
+General Questions:
+
+1. Should developer or admin be in charge of database?
+2. How should admin tools be accessed?
+3. Are empty <div>'s for formatting bad practice?
+4. What other styling options are there? (instead of bootstrap)
+
+For Brittany:
+
+1. How many images for each work?

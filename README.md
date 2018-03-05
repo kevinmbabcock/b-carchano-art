@@ -64,6 +64,7 @@
  * PayPal (API) integration to purchase directly from the site
  * Use pop-up window to display enlarged photo with work details
  * Integrate scroll option in pop-up window
+ * Compose and send email on ContactForm submission
 
 ### State
 

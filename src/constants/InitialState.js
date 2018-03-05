@@ -1,3 +1,7 @@
+import photo1 from './../assets/images/photo1.png';
+import photo2 from './../assets/images/photo2.png';
+import photo3 from './../assets/images/photo3.png';
+
 const masterWorksList = {
   1: {
     title: 'work number one',
@@ -9,7 +13,7 @@ const masterWorksList = {
     forSale: true,
     featured: true,
     id: 1,
-    img: 'image placeholde1'
+    img: photo1
   },
   2: {
     title: 'work number 2',
@@ -21,7 +25,7 @@ const masterWorksList = {
     forSale: true,
     featured: true,
     id: 2,
-    img: 'image placeholder2'
+    img: photo2
   },
   3: {
     title: 'work number 3',
@@ -33,7 +37,7 @@ const masterWorksList = {
     forSale: false,
     featured: false,
     id: 3,
-    img: 'image placeholder3'
+    img: photo3
   }
 };
 
