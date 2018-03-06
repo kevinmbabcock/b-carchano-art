@@ -1,5 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import PrevButton from './PrevButton';
+import NextButton from './NextButton';
 
 function WorkDetails(props){
 
@@ -8,12 +10,18 @@ function WorkDetails(props){
   };
 
   return (
-    <div style={workDetailsStyles}>
-      <h5>{props.title}</h5>
-      <p>Medium: {props.medium}</p>
-      <p>{props.description}</p>
-      <p>{props.height} x {props.width} (inches)</p>
-      <p>${props.price}</p>
+    <div>
+      <div style={workDetailsStyles} >
+        <h5>{props.title}</h5>
+        <p>Medium: {props.medium}</p>
+        <p>{props.description}</p>
+        <p>{props.height} x {props.width} (inches)</p>
+        <p>${props.price}</p>
+      </div>
+      <div className='row' class>
+        <PrevButton />
+        <NextButton />
+      </div>
     </div>
 
   );
