@@ -13,6 +13,8 @@ describe('worksListReducer', () => {
     height: 18,
     width: 30,
     price: 100,
+    forSale: true,
+    featured: false,
     id: 0
   };
 
@@ -42,6 +44,35 @@ describe('worksListReducer', () => {
         price: price,
         forSale: true,
         featured: false,
+        id: id
+      }
+    })
+  });
+
+  test('Should update work in masterWorksList', () => {
+    const { title, medium, description, height, width, price, id, forSale, featured } = sampleWork;
+    action = {
+      type: types.UPDATE_WORK,
+      title: 'new title',
+      medium: medium,
+      description:  'new description',
+      height: height,
+      width: width,
+      price: price,
+      forSale: false,
+      featured: featured,
+      id: id
+    };
+    expect(worksListReducer({}, action)).toEqual({
+      [id] : {
+        title: 'new title',
+        medium: medium,
+        description: 'new description',
+        height: height,
+        width: width,
+        price: price,
+        forSale: false,
+        featured: featured,
         id: id
       }
     })

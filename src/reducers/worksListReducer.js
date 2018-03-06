@@ -3,7 +3,7 @@ const { initialState, types } = constants;
 
 export default (state = initialState.masterWorksList, action) => {
 
-  const { title, medium, description, height, width, price, id } = action;
+  const { title, medium, description, height, width, price, id, forSale, featured } = action;
 
   switch (action.type) {
 
@@ -24,7 +24,24 @@ export default (state = initialState.masterWorksList, action) => {
       return newWorksListEntry;
     }
 
-      default:
-        return state;
+    case types.UPDATE_WORK: {
+      const newWorksListEntry = Object.assign({}, state, {
+        [id] : {
+          title: title,
+          medium: medium,
+          description: description,
+          height: height,
+          width: width,
+          price: price,
+          forSale: forSale,
+          featured: featured,
+          id: id
+        }
+      });
+      return newWorksListEntry;
+    }
+
+    default:
+      return state;
   }
 };
