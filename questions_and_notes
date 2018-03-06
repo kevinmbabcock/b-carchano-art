@@ -8,7 +8,7 @@ Notes:
 General Questions:
 
 1. Should developer or admin be in charge of database?
-2. How should admin tools be accessed?
+
 3. Are empty <div>'s for formatting bad practice?
 4. What other styling options are there? (instead of bootstrap)
 

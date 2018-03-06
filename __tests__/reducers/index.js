@@ -1,9 +1,9 @@
 import worksListReducer from './../../src/reducers/worksListReducer';
 import constants from './../../src/constants';
 
-describe('postListReducer', () => {
+describe('worksListReducer', () => {
 
-  let action;
+  // let action;
   const sampleWork = {
     title: 'work1',
     medium: 'ink',
@@ -14,6 +14,6 @@ describe('postListReducer', () => {
   };
 
   test('Should return default state if no action type is recognized', () => {
-    expect(postListReducer({}, { type: null })).toEqual({});
+    expect(worksListReducer({}, { type: null })).toEqual({});
   });
 })
