@@ -6,7 +6,7 @@ import NextButton from './NextButton';
 
 function Works(props){
 
-  var img.centerWorkImage = {
+  var centerWorkImage = {
     marginLeft: 'auto',
     marginRight: 'auto'
   };
@@ -17,8 +17,19 @@ function Works(props){
       {Object.keys(props.worksList).map(function(workId) {
         var work  = props.worksList[workId];
         return (
-          <div className='img.centerWorkImage'>
+          <div className='centerWorkImage'>
               <img src={work.img} alt='photo'></img>
+          </div>
+          <div>
+            <WorkDetails
+              title={work.title}
+              medium={work.medium}
+              description={work.description}
+              height={work.height}
+              width={work.width}
+              price={work.price}
+              forSale={work.forSale}
+              key={workId} />
           </div>
         );}
       )}
