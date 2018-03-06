@@ -39,5 +39,9 @@
     "url-loader": "^0.6.2",
     "webpack": "^2.6.0",
     "webpack-dev-server": "^2.5.0"
-  }
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/assetsTransformer.js", "\\.(css|less)$": "<rootDir>/assetsTransformer.js" } 
+    }
 }
