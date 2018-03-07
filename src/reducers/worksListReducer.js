@@ -41,6 +41,16 @@ export default (state = initialState.masterWorksList, action) => {
       return newWorksListEntry;
     }
 
+    case types.DELETE_WORK: {
+      const newStateList = {};
+      Object.keys(state).map(workId => {
+        if (workId != id) {
+          Object.assign(newStateList, state[id])
+        }
+      })
+      return newStateList;
+    }
+
     default:
       return state;
   }
