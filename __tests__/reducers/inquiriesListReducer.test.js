@@ -13,6 +13,7 @@ describe('inquiriesListReducer', () => {
     subject: 'test',
     message: 'this is Kevin\'s inquiry',
     newInquiry: true,
+    read: false,
     created: new Date().toString(),
     id: 1
   };
@@ -22,7 +23,7 @@ describe('inquiriesListReducer', () => {
   });
 
   test('Should successfuly add new inquiry to masterInquiryList', () =>{
-    const { firstName, lastName, email, subject, message, id, created } = sampleInquiry;
+    const { firstName, lastName, email, subject, message, id, created, read } = sampleInquiry;
     action = {
       type: types.ADD_INQUIRY,
       firstName: firstName,
@@ -40,6 +41,7 @@ describe('inquiriesListReducer', () => {
         subject: subject,
         message: message,
         newInquiry: true,
+        read: read,
         created: created,
         id: id
       }

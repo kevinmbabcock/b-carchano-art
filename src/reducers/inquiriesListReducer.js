@@ -16,6 +16,7 @@ export default (state = initialState.inquiriesList, action) => {
           subject: subject,
           message: message,
           newInquiry: true,
+          read: false,
           created: new Date().toString(),
           id: id
         }
