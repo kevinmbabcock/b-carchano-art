@@ -11,7 +11,7 @@ const store = createStore(rootReducer, applyMiddleware(thunkMiddleware));
 
 ReactDOM.render(
   <HashRouter>
-    <Provider>
+    <Provider store={store}>
       <App />
     </Provider>
   </HashRouter>,

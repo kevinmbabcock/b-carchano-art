@@ -46,13 +46,15 @@ const masterInquiriesList = {
     name: 'Kevin',
     email: 'babsy10@gmail.com',
     inquiry: 'this is Kevin\'s inquiry',
-    new: true
+    new: true,
+    created: 'Wed Mar 07 2018 10:28:32 GMT-0800 (PST)'
   },
   2: {
     name: 'Brittany',
     email: 'bcarchano@gmail.com',
     inquiry: 'this is Brittany\'s inquiry',
-    new: false
+    new: false,
+    created: 'Tue Feb 27 2018 11:08:44 GMT-0800 (PST)'
   }
 };
 

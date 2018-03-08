@@ -7,7 +7,7 @@ Notes:
 
 General Questions:
 
-1. Should developer or admin be in charge of database?
+1. is using isAdmin state slice sufficient security?
 
 3. Are empty <div>'s for formatting bad practice?
 4. What other styling options are there? (instead of bootstrap)
