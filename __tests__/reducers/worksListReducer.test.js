@@ -79,7 +79,7 @@ describe('worksListReducer', () => {
   });
 
   test('Should delete work from masterWorksList', () => {
-    const { id } = sampleWork
+    const { id } = sampleWork;
     action = {
       type: types.DELETE_WORK,
       id: id

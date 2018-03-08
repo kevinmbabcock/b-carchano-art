@@ -44,5 +44,14 @@ describe('inquiriesListReducer', () => {
         id: id
       }
     })
-  })
+  });
+
+  test('Should delete inquiry from masterInquiryList', () => {
+    const { id } = sampleInquiry;
+    action = {
+      type: types.DELETE_INQUIRY,
+      id: id
+    };
+    expect(inquiriesListReducer(sampleInquiry, action)).toEqual({})
+  });
 })

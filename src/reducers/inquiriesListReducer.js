@@ -23,6 +23,16 @@ export default (state = initialState.inquiriesList, action) => {
       return newInquiryListEntry;
     }
 
+    case types.DELETE_INQUIRY: {
+      const newStateList = {};
+      Object.keys(state).map(inquiryId => {
+        if (inquiryId != id) {
+          Object.assign(newStateList, state[id])
+        }
+      })
+      return newStateList;
+    }
+
 
     default:
       return state;
