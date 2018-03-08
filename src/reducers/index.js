@@ -1,9 +1,11 @@
 import { combineReducers } from 'redux';
 import worksListReducer from './worksListReducer';
+import inquiriesListReducer from './inquiriesListReducer';
 
 
 const rootReducer = combineReducers({
-  worksList: worksListReducer,
+  masterWorksList: worksListReducer,
+  masterInquiriesList: inquiriesListReducer
 });
 
 export default rootReducer;
