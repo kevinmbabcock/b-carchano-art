@@ -1,5 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+import { types } from './../constants';
+import { addInquiry } from './../actions';
 
 function ContactForm(props){
   let _firstName;
@@ -12,16 +15,28 @@ function ContactForm(props){
     color: '#8c8c8c'
   };
 
+  function handleContactFormSubmission(event) {
+    event.preventDefault();
+    const { dispatch } = props;
+    dispatch(addInquiry(_firstName.value, _lastName.value, _email.value, _subject.value, _message.value));
+    console.log('form submitted');
+    _firstName.value = '';
+    _lastName.value = '';
+    _email.value = '';
+    _subject.value = '';
+    message.value = '';
+  }
+
   return (
     <div style={textStyle}>
       <h4>Please fill out the form to contact the artist</h4>
-      <form onSubmit={props.onFormSubmission}>
+      <form onSubmit={handleContactFormSubmission}>
         <div className='row'>
           <div className='col-md-3'>
             <p>First Name:</p>
             <input
               type='text'
-              id='fistName'
+              id='firstName'
               placeholder='First Name'
               ref={(input) => {_firstName = input;}}/>
           </div>
@@ -59,7 +74,7 @@ function ContactForm(props){
 }
 
 ContactForm.propTypes = {
-  onFormSubmission: PropTypes.func
+  dispatch: PropTypes.func
 }
 
-export default ContactForm;
+export default connect()(ContactForm);

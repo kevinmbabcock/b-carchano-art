@@ -17,7 +17,7 @@ function AddWork(props){
   function handleAddWorkFormSubmission(event) {
     event.preventDefault();
     const { dispatch } = props;
-    dispatch(addWork(_title, _medium, _description, _height, _width, _price));
+    dispatch(addWork(_title.value, _medium.value, _description.value, _height.value, _width.value, _price.value));
     console.log('form submitted');
     _title.value = '';
     _medium.value = '';

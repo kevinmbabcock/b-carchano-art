@@ -40,7 +40,7 @@ export const addInquiry = (firstName, lastName, email, subject, message) => ({
   id: v4()
 });
 
-export const deleteInquiry = (id) ({
+export const deleteInquiry = (id) => ({
   type: types.DELETE_INQUIRY,
   id
 });
