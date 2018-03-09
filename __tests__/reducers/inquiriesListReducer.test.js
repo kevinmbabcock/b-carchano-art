@@ -56,4 +56,25 @@ describe('inquiriesListReducer', () => {
     };
     expect(inquiriesListReducer(sampleInquiry, action)).toEqual({})
   });
+
+  // test('Should mark inquiry as read', () => {
+  //   const { firstName, lastName, email, subject, message, created, id } = sampleInquiry;
+  //   action = {
+  //     type: types.MARK_INQUIRY_AS_READ,
+  //     id: id
+  //   };
+  //   expect(inquiriesListReducer(sampleInquiry, action)).toEqual({
+  //     [id] : {
+  //       firstName: firstName,
+  //       lastName: lastName,
+  //       email: email,
+  //       subject: subject,
+  //       message: message,
+  //       newInquiry: true,
+  //       read: true,
+  //       created: created,
+  //       id: id
+  //     }
+  //   })
+  // })
 })

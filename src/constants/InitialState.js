@@ -41,20 +41,28 @@ const masterWorksList = {
   }
 };
 
-const masterInquiriesList = {
+const masterInquiriesList =  {
   1: {
-    name: 'Kevin',
+    firstName: 'Kevin',
+    lastName: 'B',
     email: 'babsy10@gmail.com',
-    inquiry: 'this is Kevin\'s inquiry',
-    new: true,
-    created: 'Wed Mar 07 2018 10:28:32 GMT-0800 (PST)'
+    subject: 'test',
+    message: 'this is Kevin\'s inquiry',
+    newInquiry: true,
+    read: false,
+    created: 'Wed Mar 07 2018 10:28:32 GMT-0800 (PST)',
+    id: 1
   },
   2: {
-    name: 'Brittany',
+    firstName: 'Brittany',
+    lastName: 'B',
     email: 'bcarchano@gmail.com',
-    inquiry: 'this is Brittany\'s inquiry',
-    new: false,
-    created: 'Tue Feb 27 2018 11:08:44 GMT-0800 (PST)'
+    subject: 'testing',
+    message: 'this is Brittany\'s inquiry',
+    newInquiry: false,
+    read: true,
+    created: 'Tue Feb 27 2018 11:08:44 GMT-0800 (PST)',
+    id: 2
   }
 };
 
