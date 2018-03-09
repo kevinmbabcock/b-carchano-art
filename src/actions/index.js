@@ -1,7 +1,7 @@
 import * as types from './../constants/ActionTypes';
 import v4 from 'uuid/v4';
 
-export const addWork = (title, medium, description, height, width, price, id) => ({
+export const addWork = (title, medium, description, height, width, price ) => ({
   type: types.ADD_WORK,
   title,
   medium,
@@ -9,5 +9,5 @@ export const addWork = (title, medium, description, height, width, price, id) =>
   height,
   width,
   price,
-  id
+  id: v4()
 });

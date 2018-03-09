@@ -4,20 +4,23 @@ import PropTypes from 'prop-types';
 function InquiryDetails(props){
   return (
     <div>
-      <p>Name: {props.name}</p>
+      <p>Name: {props.firstName} {props.lastName}</p>
       <p>Email: {props.email}</p>
-      <p>Inquiry:</p>
+      <p>Subject: {props.subject}</p>
+      <p>Message:</p>
       <div className='container'>
-        <p>{props.inquiry}</p>
+        <p>{props.message}</p>
       </div>
     </div>
   );
 }
 
 InquiryDetails.propTypes = {
-  name: PropTypes.string,
+  firstName: PropTypes.string,
+  lastName: PropTypes.string,
   email: PropTypes.string,
-  inquiry: PropTypes.string
+  subject: PropTypes.string,
+  message: PropTypes.string
 };
 
 export default InquiryDetails;

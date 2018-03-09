@@ -10,9 +10,11 @@ function Inquiry(props){
         return (
           <div>
             <InquiryDetails
-              name={inquiry.name}
+              firstName={inquiry.firstName}
+              lastName={inquiry.lastName}
               email={inquiry.email}
-              inquiry={inquiry.inquiry}
+              subject={inquiry.subject}
+              message={inquiry.message}
               key={inquiryId} />
             <br />
           </div>

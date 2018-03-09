@@ -1,20 +1,36 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import constants from './../constants';
+const { types } = constants;
+import PropTypes from 'prop-types';
+import { addWork } from './../actions';
 
-function AddWork(){
+function AddWork(props){
   let _title;
   let _medium;
   let _description;
   let _height;
   let _width;
   let _price;
-  let _forSale;
-  let _featured;
   let _img;
+
+  function handleAddWorkFormSubmission(event) {
+    event.preventDefault();
+    const { dispatch } = props;
+    dispatch(addWork(_title, _medium, _description, _height, _width, _price));
+    console.log('form submitted');
+    _title.value = '';
+    _medium.value = '';
+    _description.value = '';
+    _height.value = '';
+    _width.value = '';
+    _price.value = '';
+  }
 
   return (
     <div>
       <h5>Fill out form to add a new work</h5>
-      <form>
+      <form onSubmit={handleAddWorkFormSubmission}>
         <p>Title:</p>
         <input
           type='text'
@@ -61,4 +77,8 @@ function AddWork(){
   );
 }
 
-export default AddWork;
+AddWork.propTypes = {
+  dispatch: PropTypes.func
+}
+
+export default connect()(AddWork);

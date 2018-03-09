@@ -1,8 +1,8 @@
 import React from 'react';
 
 function EditBio(){
-  let bio;
-  
+  let _bio;
+
   return (
     <div>
       <form>

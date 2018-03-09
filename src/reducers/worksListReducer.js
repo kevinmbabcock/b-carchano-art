@@ -3,7 +3,7 @@ const { initialState, types } = constants;
 
 export default (state = initialState.worksList, action) => {
 
-  const { title, medium, description, height, width, price, id, forSale, featured } = action;
+  const { title, medium, description, height, width, price, id } = action;
 
   switch (action.type) {
 
