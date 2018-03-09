@@ -8,22 +8,32 @@ function ContactForm(props){
   let _subject;
   let _message;
 
+  var textStyle = {
+    color: '#8c8c8c'
+  };
+
   return (
-    <div>
+    <div style={textStyle}>
       <h4>Please fill out the form to contact the artist</h4>
       <form onSubmit={props.onFormSubmission}>
-        <p>First Name:</p>
-        <input
-          type='text'
-          id='fistName'
-          placeholder='First Name'
-          ref={(input) => {_firstName = input;}}/>
-        <p>Last Name:</p>
-        <input
-          type='text'
-          id='lastName'
-          placeholder='Last Name'
-          ref={(input) => {_lastName = input;}}/>
+        <div className='row'>
+          <div className='col-md-3'>
+            <p>First Name:</p>
+            <input
+              type='text'
+              id='fistName'
+              placeholder='First Name'
+              ref={(input) => {_firstName = input;}}/>
+          </div>
+          <div className='cole-md-3'>
+            <p>Last Name:</p>
+            <input
+              type='text'
+              id='lastName'
+              placeholder='Last Name'
+              ref={(input) => {_lastName = input;}}/>
+          </div>
+        </div>
         <br />
         <p>Email:</p>
         <input
