@@ -7,7 +7,7 @@ import ShippingCost from './ShippingCost';
 class ContactControl extends React.Component {
 
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       formSubmitted: false
     };
@@ -20,7 +20,7 @@ class ContactControl extends React.Component {
   }
 
   handleExitConfirmation() {
-    this.setState({formSubmitted: false})
+    this.setState({formSubmitted: false});
   }
 
   render() {
@@ -28,7 +28,7 @@ class ContactControl extends React.Component {
     if (this.state.formSubmitted) {
       currentlyVisibleContent = <ContactVerification onExitConfirmation={this.handleExitConfirmation}/>;
     } else {
-      currentlyVisibleContent = <ContactForm onFormSubmission={this.handleFormSubmission}/>
+      currentlyVisibleContent = <ContactForm onFormSubmission={this.handleFormSubmission}/>;
     }
     return (
       <div>

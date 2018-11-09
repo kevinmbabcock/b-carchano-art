@@ -156,3 +156,12 @@
           - Inquiry
             - InquiryDetails
     - LogIn        
+
+# Set Up
+ * download repo from github
+ * go to root directory in terminal
+ * run $ npm install
+ * run $ npm start
+ * navigate to 'localhost:8080' in browser
+ 
+ * for linter, run $ npm lint 

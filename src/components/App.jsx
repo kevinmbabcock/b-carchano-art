@@ -16,10 +16,10 @@ import InquiriesListContainer from './InquiriesListContainer';
 class App extends React.Component {
 
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       isAdmin: false
-    }
+  };
     // this.handleAdminLogin = this.handleAdminLogin.bind(this);
   }
 

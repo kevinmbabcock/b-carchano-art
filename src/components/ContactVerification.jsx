@@ -13,6 +13,6 @@ function ContactVerification(props) {
 
 ContactVerification.propTypes = {
   onExitConfirmation: PropTypes.func
-}
+};
 
 export default ContactVerification;

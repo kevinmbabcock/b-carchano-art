@@ -21,7 +21,7 @@ export default (state = initialState.inquiriesList, action) => {
           id: id
         }
       });
-      console.log('success');
+      console.log('action successful');
       return newInquiryListEntry;
     }
 

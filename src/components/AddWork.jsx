@@ -79,6 +79,6 @@ function AddWork(props){
 
 AddWork.propTypes = {
   dispatch: PropTypes.func
-}
+};
 
 export default connect()(AddWork);

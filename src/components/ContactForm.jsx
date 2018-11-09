@@ -24,7 +24,7 @@ function ContactForm(props){
     _lastName.value = '';
     _email.value = '';
     _subject.value = '';
-    message.value = '';
+    _message.value = '';
   }
 
   return (
@@ -75,6 +75,6 @@ function ContactForm(props){
 
 ContactForm.propTypes = {
   dispatch: PropTypes.func
-}
+};
 
 export default connect()(ContactForm);

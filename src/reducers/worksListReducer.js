@@ -21,6 +21,7 @@ export default (state = initialState.worksList, action) => {
           id: id
         }
       });
+      console.log('action successful');
       return newWorksListEntry;
     }
 
