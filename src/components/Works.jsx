@@ -4,10 +4,10 @@ import PropTypes from 'prop-types';
 
 function Works(props){
 
-  var centerWorkImage = {
-    marginLeft: 'auto',
-    marginRight: 'auto'
-  };
+  // var centerWorkImage = {
+  //   marginLeft: 'auto',
+  //   marginRight: 'auto'
+  // };
 
   return (
     <div>
@@ -17,7 +17,7 @@ function Works(props){
         return (
           <div>
             <div className='centerWorkImage'>
-                <img src={work.img} alt='photo'></img>
+              <img src={work.img} alt='photo'></img>
             </div>
             <div>
               <WorkDetails

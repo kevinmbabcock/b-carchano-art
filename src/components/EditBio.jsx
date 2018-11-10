@@ -1,7 +1,7 @@
 import React from 'react';
 
 function EditBio(){
-  let _bio;
+  // let _bio;
 
   return (
     <div>

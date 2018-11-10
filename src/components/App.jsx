@@ -17,14 +17,14 @@ class App extends React.Component {
 
   constructor(props) {
     super(props);
-    this.state = {
-      isAdmin: false
-  };
+    // this.state = {
+    //   isAdmin: false
+    // };
     // this.handleAdminLogin = this.handleAdminLogin.bind(this);
   }
 
   render() {
-    let adminContent = null;
+    // let adminContent = null;
     return (
       <div className='container'>
         <Header />

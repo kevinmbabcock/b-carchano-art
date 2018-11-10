@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import constants from './../constants';
-const { types } = constants;
+// const { types } = constants;
 import PropTypes from 'prop-types';
 import { addWork } from './../actions';
 
@@ -12,13 +12,13 @@ function AddWork(props){
   let _height;
   let _width;
   let _price;
-  let _img;
+  // let _img;
 
   function handleAddWorkFormSubmission(event) {
     event.preventDefault();
     const { dispatch } = props;
     dispatch(addWork(_title.value, _medium.value, _description.value, _height.value, _width.value, _price.value));
-    console.log('form submitted');
+    // console.log('form submitted');
     _title.value = '';
     _medium.value = '';
     _description.value = '';

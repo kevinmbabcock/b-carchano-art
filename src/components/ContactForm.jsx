@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { types } from './../constants';
+// import { types } from './../constants';
 import { addInquiry } from './../actions';
 
 function ContactForm(props){
@@ -64,6 +64,8 @@ function ContactForm(props){
         <p>Message:</p>
         <textarea
           id='message'
+          placeholder="Type message here..."
+          style={{width: "500px", height: "200px"}}
           ref={(textarea) => {_message = textarea;}}/>
         <br />
         <br />
