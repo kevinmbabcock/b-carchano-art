@@ -6,7 +6,8 @@ function Navbar(){
   var navBarStyles = {
     textAlign: 'center',
     color: '#8c8c8c',
-    marginBottom: '30px'
+    marginBottom: '30px',
+    fontFamily: 'cursive'
   };
 
   return (

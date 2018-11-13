@@ -11,8 +11,20 @@ function ContactForm(props){
   let _subject;
   let _message;
 
-  var textStyle = {
+  var componentStyle = {
+    color: '#8c8c8c',
+    margin: 50,
+    fontFamily: 'cursive',
     color: '#8c8c8c'
+  };
+  
+  var textBoxStyle = {
+    marginLeft: 20,
+    marginBottom: 20
+  };
+  
+  var labelStyle = {
+    paddingBottom: 0
   };
 
   function handleContactFormSubmission(event) {
@@ -28,48 +40,48 @@ function ContactForm(props){
   }
 
   return (
-    <div style={textStyle}>
-      <h4>Please fill out the form to contact the artist</h4>
+    <div style={componentStyle}>
+      <h4 style={{marginBottom: 50, textAlign: 'center'}}>Please fill out the form to contact the artist</h4>
       <form onSubmit={handleContactFormSubmission}>
         <div className='row'>
-          <div className='col-md-3'>
-            <p>First Name:</p>
+          <div className='col-md'>
+            <p style={labelStyle}>First Name:</p>
             <input
               type='text'
               id='firstName'
-              placeholder='First Name'
+              style={textBoxStyle}
               ref={(input) => {_firstName = input;}}/>
           </div>
-          <div className='cole-md-3'>
-            <p>Last Name:</p>
+          <div className='col-md'>
+            <p style={labelStyle}>Last Name:</p>
             <input
               type='text'
               id='lastName'
-              placeholder='Last Name'
+              style={textBoxStyle}
               ref={(input) => {_lastName = input;}}/>
           </div>
         </div>
-        <br />
-        <p>Email:</p>
+        <p style={labelStyle}>Email:</p>
         <input
           id='email'
-          placeholder='Email'
+          style={textBoxStyle}
           ref={(input) => {_email = input;}}/>
-        <br />
-        <p>Subject</p>
+
+        <p style={labelStyle}>Subject</p>
         <input
           id='subject'
-          placeholder='Subject'
+          style={{width: "300px"}, textBoxStyle}
           ref={(input) => {_subject = input;}}/>
-        <p>Message:</p>
+        <p style={labelStyle}>Message:</p>
         <textarea
           id='message'
-          placeholder="Type message here..."
-          style={{width: "500px", height: "200px"}}
+          style={textBoxStyle}
+          placeholder="It's a good thing you're pretty... ;)"
+          style={textBoxStyle, {width: "500px", height: "200px"}}
           ref={(textarea) => {_message = textarea;}}/>
         <br />
         <br />
-        <button type='submit'>Submit Request</button>
+        <button type='submit' style={{backGroundColor: 'none'}}>Submit Request</button>
       </form>
     </div>
   );
